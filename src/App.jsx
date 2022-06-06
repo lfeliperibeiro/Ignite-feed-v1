@@ -1,6 +1,6 @@
 import { Header } from './components/Header';
 import styles from './App.module.css';
-import { Post } from './Post';
+import { Post } from './components/Post';
 import { Sidebar } from './components/Sidebar';
 
 function App() {
@@ -10,14 +10,8 @@ function App() {
       <div className={styles.wrapper}>
         <Sidebar />
         <main>
-          <Post
-            author={'Felipe Ribeiro'}
-            content={'lorem implements dolor lore'}
-          />
-          <Post
-            author={'Felipe Ribeiro'}
-            content={'lorem implements dolor lore'}
-          />
+          <Post />
+          <Post />
         </main>
       </div>
     </div>
