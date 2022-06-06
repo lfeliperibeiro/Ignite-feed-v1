@@ -1,16 +1,15 @@
 import { PencilLine } from 'phosphor-react';
 import styles from './Sidebar.module.css';
 import sidebarImg from '../../assets/background.svg';
+import { Avatar } from '../Avatar';
 
 export const Sidebar = () => {
   return (
     <aside className={styles.sidebar}>
       <img className={styles.cover} src={sidebarImg} alt="" />
       <div className={styles.profile}>
-        <img
-          className={styles.avatar}
-          src={'https://avatars.githubusercontent.com/u/53883371?v=4'}
-          alt={''}
+        <Avatar
+          avatar={'https://avatars.githubusercontent.com/u/53883371?v=4'}
         />
         <strong>Felipe Ribeiro</strong>
         <span>Front-End Developer</span>
